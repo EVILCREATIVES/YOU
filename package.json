@@ -1,0 +1,56 @@
+{
+  "name": "you-creative-canvas",
+  "version": "0.1.0",
+  "description": "A universal creative canvas where users can create assets, edit them, and produce stories, films, videos, games, and comics without leaving the environment",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "creative",
+    "canvas",
+    "ai",
+    "generative",
+    "storytelling",
+    "video",
+    "game",
+    "comic",
+    "media-creation"
+  ],
+  "author": "EVILCREATIVES",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EVILCREATIVES/YOU.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EVILCREATIVES/YOU/issues"
+  },
+  "homepage": "https://github.com/EVILCREATIVES/YOU#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0"
+  }
+}
