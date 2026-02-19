@@ -118,12 +118,13 @@ function elementManipulationExample() {
   console.log(`Created element: ${text.content}`);
 
   // Update the element
-  canvas.updateElement(text.id, {
+  const updates: any = {
     content: 'Updated Text',
     x: 200,
     y: 200,
     rotation: 15
-  });
+  };
+  canvas.updateElement(text.id, updates);
   console.log('Element updated');
 
   // Get the updated element

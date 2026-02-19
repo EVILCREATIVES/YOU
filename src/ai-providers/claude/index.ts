@@ -60,7 +60,7 @@ export class ClaudeProvider implements TextProvider {
       const response = await this.makeRequest('messages', payload);
 
       if (!response.ok) {
-        const error = await response.json();
+        const error: any = await response.json();
         throw new AIProviderError(
           error.error?.message || 'Claude API request failed',
           this.name,

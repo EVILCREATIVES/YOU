@@ -60,7 +60,7 @@ export class GeminiProvider implements TextProvider {
       );
 
       if (!response.ok) {
-        const error = await response.json();
+        const error: any = await response.json();
         throw new AIProviderError(
           error.error?.message || 'Gemini API request failed',
           this.name,

@@ -52,7 +52,7 @@ export class FluxProvider implements ImageProvider {
       const response = await this.makeRequest(payload);
 
       if (!response.ok) {
-        const error = await response.json();
+        const error: any = await response.json();
         throw new AIProviderError(
           error.message || 'FLUX API request failed',
           this.name,
